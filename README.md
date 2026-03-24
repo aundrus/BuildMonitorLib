@@ -1,7 +1,21 @@
-# build-monitor-lib
-A set of modular build monitoring components for Django and jQuery-based platforms, 
-delivering real-time visibility and control over build and CI processes.
+## build-monitor-lib
 
-They are being developed for and integrated with the Build Monitoring system within 
-the BigPanDA monitoring platform.
-https://github.com/PanDAWMS/panda-bigmon-core.
+A drop-in **Django build monitoring module** (views, URL routes, utilities, and HTML templates) used
+to power **ATLAS/BigPanDA** build dashboards for **CI** and **nightly** pipelines, designed to fit
+into **jQuery/DataTables-style** front-end pages.
+
+It renders both **HTML pages** and **JSON endpoints** for:
+- Global build status overview
+- CI builds summary
+- Nightly builds summary
+- Test results and component/package results drill-downs
+
+The module queries build/test status from **ATLR Oracle-backed tables** (via Django DB cursors)
+and enriches dashboards with **cached ART test results**,
+plus UI status indicators (OK/warn/error/updating) for interactive, sortable tables.
+
+Developed for integration with
+**[PanDAWMS/panda-bigmon-core](https://github.com/PanDAWMS/panda-bigmon-core)**.
+
+
+
