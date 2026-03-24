@@ -10,7 +10,7 @@ It renders both **HTML pages** and **JSON endpoints** for:
 - Nightly builds summary
 - Test results and component/package results drill-downs
 
-The module queries build/test status from **ATLR Oracle-backed tables** (via Django DB cursors)
+The module queries build/test status from **Oracle-backed tables** (via Django DB cursors)
 and enriches dashboards with **cached test results**,
 plus UI status indicators (OK/warn/error/updating) for interactive, sortable tables.
 
